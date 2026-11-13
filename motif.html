@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:," />
+  <title>Motif — Datik Batik</title>
+  <meta name="description" content="Profil informatif Datik Batik, UMKM batik asal Tangerang Selatan yang mengolah kearifan lokal menjadi karya kontemporer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Langsung ke isi</a>
+  <header class="topbar">
+    <div class="place">Tangerang Selatan · Sejak 2012</div>
+    <button class="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="kisah.html">Kisah</a><a href="motif.html" aria-current="page">Motif</a><a href="proses.html">Proses</a><a href="koleksi.html">Koleksi</a><a href="jelajah.html">Jelajah</a><a href="proyek.html">Proyek</a></nav>
+  </header>
+
+  <main id="main">
+<section class="motifs" id="motif" aria-labelledby="motif-title">
+      <div class="section-head">
+        <h2 class="section-title" id="motif-title">Tangsel dalam motif</h2>
+        <p>Simbol keseharian kota diolah menjadi ritme visual. Inilah sumber inspirasi yang disebut Datik sebagai ciri khas karyanya.</p>
+      </div>
+      <div class="motif-grid">
+        <article class="motif">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" aria-hidden="true"><path d="M40 40c-20-4-22-24-11-29 9-4 13 9 11 29Zm0 0c4-20 24-22 29-11 4 9-9 13-29 11Zm0 0c20 4 22 24 11 29-9 4-13-9-11-29Zm0 0c-4 20-24 22-29 11-4-9 9-13 29-11Z"/><circle cx="40" cy="40" r="4"/></svg>
+          <div><h3>Anggrek Vanda Douglas</h3><p>Flora hias yang menghadirkan bentuk organik dan warna berani.</p></div>
+        </article>
+        <article class="motif">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" aria-hidden="true"><path d="M29 17c-14 9-15 34 1 45 9 6 25 0 27-13 3-15-8-25-28-32Z"/><path d="M28 22c14 9 21 23 22 36M34 35l-8 8M42 42l10-7"/></svg>
+          <div><h3>Kacang</h3><p>Hasil bumi sederhana yang ditata menjadi lekuk dekoratif.</p></div>
+        </article>
+        <article class="motif">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" aria-hidden="true"><path d="M25 49h30c0 13-6 19-15 19s-15-6-15-19Z"/><path d="M55 53c12-2 13 10 2 11M31 40c-6-7 5-8 0-16M42 40c-6-7 5-8 0-16M52 40c-6-7 5-8 0-16"/></svg>
+          <div><h3>Kopi</h3><p>Jejak komoditas dan budaya berkumpul di kawasan Tangerang.</p></div>
+        </article>
+        <article class="motif">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" aria-hidden="true"><path d="M22 69 43 11M37 69l21-58M28 53h17M34 36h17M40 20h17"/></svg>
+          <div><h3>Bambu</h3><p>Garis ruas yang kuat, lentur, dan mudah dibaca sebagai pola berulang.</p></div>
+        </article>
+        <article class="motif">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" aria-hidden="true"><path d="M11 36 40 14l29 22M18 32v34h44V32M28 66V43h24v23M34 43V29h12v14"/></svg>
+          <div><h3>Rumah Blandongan</h3><p>Arsitektur tradisional yang mengikat karya dengan identitas tempat.</p></div>
+        </article>
+      </div>
+    </section>
+
+<section class="explore" aria-labelledby="eksplor-title">
+      <div class="explore-copy">
+        <p class="eyebrow">Interaktif · JavaScript</p>
+        <h2 id="eksplor-title">Temukan motif yang dekat denganmu</h2>
+        <p>Pilih suasana dan karakter yang kamu sukai. Rekomendasi ini membantu mengenal ragam inspirasi motif Datik Batik—bukan formulir pemesanan.</p>
+      </div>
+      <form class="motif-form" id="motif-form">
+        <div class="field">
+          <label for="mood">Suasana yang dicari</label>
+          <select id="mood" name="mood">
+            <option value="tenang">Tenang dan organik</option>
+            <option value="hangat">Hangat dan akrab</option>
+            <option value="tegas">Tegas dan berstruktur</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="use">Ingin dikenakan untuk</label>
+          <select id="use" name="use">
+            <option value="harian">Keseharian</option>
+            <option value="acara">Acara khusus</option>
+            <option value="kerja">Bekerja</option>
+          </select>
+        </div>
+        <button class="form-action" type="submit">Lihat rekomendasi</button>
+        <div class="motif-result" id="motif-result" aria-live="polite">
+          <strong>Mulai dari pilihanmu</strong>
+          <p>Hasil rekomendasi akan tampil di sini.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <h2>Catatan &amp; sumber</h2>
+      <div>
+        <p>Profil ini disusun dari liputan publik tentang Datik Batik dan rujukan warisan budaya batik. Beberapa makna visual pada bagian motif adalah penjelasan kuratorial berdasarkan objek inspirasinya, bukan tafsir resmi sang perajin.</p>
+        <div class="sources">
+          <a href="https://www.bloombergtechnoz.com/detail-news/87800/penguatan-ekosistem-umkm-batik-melalui-brincubator" target="_blank" rel="noopener noreferrer">Bloomberg Technoz ↗</a>
+          <a href="https://palapanews.com/2022/10/03/ragam-busana-batik-datik-meriahkan-batik-fashion-lunch-di-swiss-belhotel-serpong/" target="_blank" rel="noopener noreferrer">PalapaNews ↗</a>
+          <a href="https://ich.unesco.org/en/RL/indonesianbatik-00170" target="_blank" rel="noopener noreferrer">UNESCO — Indonesian Batik ↗</a>
+        </div>
+        <div class="site-map">
+          <b>Peta situs</b>
+          <nav aria-label="Peta situs">
+            <a href="kisah.html">Asal-usul</a><a href="motif.html">Motif</a><a href="proses.html">Proses</a><a href="koleksi.html">Koleksi</a><a href="jelajah.html">Artikel &amp; multimedia</a><a href="proyek.html">Portal proyek</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="closing"><span>Profil UMKM lokal · Tangerang Selatan</span><span>Batik Indonesia tercatat UNESCO sejak 2009</span></div>
+      <div class="data-mahasiswa">
+      <b>Data Mahasiswa</b>
+      <p>Panji Dharma Putra &middot; NIM: 241011401828 &middot; Kelas 05TPLP026<br>
+      Universitas Pamulang &middot; Alamat: [ISI ALAMAT] &middot; Domain: muse.ai/s/website-umkm-batik-xkn5x02xjxndaxdq &middot; Tema: Website UMKM Datik Batik</p>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
